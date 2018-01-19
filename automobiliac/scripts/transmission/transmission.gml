@@ -1,12 +1,16 @@
 // Control the car's transmission
 
+// If gears are shifted, change gears and RPM accordingly
 if(SHIFT_UP)
 {
 	if(current_gear != max_gear)
 	{
 		current_gear += 1
-		current_rpm -= 2800;
 		
+		if(engine_on)
+		{
+			current_rpm -= 2800;
+		}
 	}
 }
 
@@ -15,16 +19,20 @@ if(SHIFT_DOWN)
 	if(current_gear != min_gear)
 	{
 		current_gear -= 1;
-		current_rpm += 1000;
+		
+		if(engine_on)
+		{
+			current_rpm += 1000;
+		}
 	}
 }
 
 // Control acceleration by gear
 
 // Normal Speed Variables
-//maxSpd = 12;
-//accel = .7;
-//decel = .1;
+// maxSpd = 12;
+// accel = .7;
+// decel = .1;
 
 if(current_gear == FIRST)
 {

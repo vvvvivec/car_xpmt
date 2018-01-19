@@ -1,4 +1,4 @@
 /// Draw GUI
 
-dbg_show_vars();
+scr_gui_display();
 

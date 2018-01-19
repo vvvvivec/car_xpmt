@@ -1,5 +1,6 @@
 // Control car lights
 
+// Control whether or not the lights are on and visible
 if(LIGHTS)
 {
 	if(lights_on)

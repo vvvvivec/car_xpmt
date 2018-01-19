@@ -1,5 +1,7 @@
 // Accelerate script
 
+// Calculate acceleration of car's speed based on gears
+// If the car isn't in gear, do nothing
 if(current_gear == REVERSE)
 {
 	if(len > -maxReverseSpd)

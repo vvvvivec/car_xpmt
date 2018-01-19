@@ -1,5 +1,6 @@
 // Brake script
 
+// Calculate decceleration while brakes are pressed
 if(current_gear != REVERSE)
 {
 	if(len > 0) 

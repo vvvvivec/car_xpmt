@@ -1,19 +1,17 @@
 // Negative torque script for passive deccel
-//if(dir == -1) // Moving forward
-//{
-	if(len > 0) 
-	{
-		len -= decel;
-	}
-//}
-//else if(dir == 1) // Moving backward
-//{
-	if(len < 0) 
-	{
-		len += decel;
-	}
-	else if(len == 0)
-	{
-		len = 0;
-	}
-//}
+
+// Calculate decceleration value based on if the car is moving forward or backward
+// If the car is moving, then the speed is set to 0
+if(len > 0) 
+{
+	len -= decel;
+}
+
+if(len < 0) 
+{
+	len += decel;
+}
+else if(len == 0)
+{
+	len = 0;
+}

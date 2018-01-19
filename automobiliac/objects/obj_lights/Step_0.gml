@@ -1,2 +1,2 @@
-// Check for toggle
+// Check for lights toggle
 ctrl_lights();

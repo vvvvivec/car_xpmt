@@ -1,4 +1,10 @@
-/// Initialize car variables
+/// Initialize car controller object
+
+// This object performs the car logic but is not visible for drift A E S T H E T I C S
+// See turn_car script for explanation
+
+// Ignition variable
+engine_on = false;
 
 // Normal Speed Variables
 maxSpd = 12;
@@ -13,11 +19,10 @@ turnReverseSpd = .1;
 
 //  Braking Variables
 braking_decel = .3;
-ebraking_decel = .6;
+ebraking_decel = .4;
 
 // Object Meta Variables
 dir = 0;
-
 hspd = 0;
 vspd = 0;
 x_axis = 0;
@@ -42,5 +47,7 @@ lights = instance_create_layer(x + lengthdir_x(20, image_angle), y + lengthdir_y
 // Engine variables
 max_rpm = 7800;
 idle_rpm = 700;
-current_rpm = idle_rpm;
-motor_sound = audio_play_sound(engine_sound,1,1);
+current_rpm = 0;
+
+// Spawn car body
+body = instance_create_layer(x,y,"Instances",plyr_car_body);

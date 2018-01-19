@@ -1,4 +1,7 @@
-/// Init lights
+/// Init lights object
+
+// This object is currently broken
+// Lights do not stay centered on the car once it turns
 
 // Init to off
 visible = false;
@@ -10,4 +13,5 @@ lights_on = false;
 x = plyr_car_controller.x+80;
 y = plyr_car_controller.y;
 
+// Set the angle
 image_angle = plyr_car_controller.image_angle;

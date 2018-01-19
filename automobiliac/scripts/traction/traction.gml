@@ -1,6 +1,8 @@
 // Traction script
 
 // Determine turn speed by car speed 
+// This is a really sketchy way to handle traction limits 
+// There is no natural drifting yet
 
 // Note: variable len is the measurement of the car's speed
 
